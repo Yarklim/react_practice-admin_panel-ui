@@ -2,17 +2,17 @@ import { Outlet } from 'react-router-dom';
 import Footer from '../Footer/Footer';
 import Menu from '../Menu/Menu';
 import Navbar from '../Navbar/Navbar';
-import s from './Layout.module.scss';
+import '../../styles/global.scss'
 
 const Layout = () => {
   return (
-    <div className={s.main}>
+    <div className='main'>
       <Navbar />
-      <div className={s.container}>
-        <div className={s.menuContainer}>
+      <div className='container'>
+        <div className='menu-container'>
           <Menu />
         </div>
-        <div className={s.contentContainer}>
+        <div className='content-container'>
           <Outlet />
         </div>
       </div>
